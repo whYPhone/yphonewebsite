@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <MenuHeader />
+    <CarouselPrim1 />
     
     <ProductSec1
       :productImage="'/assets/bilder/Y-Phone_Black_1.png'"
@@ -50,6 +51,7 @@ import ReviewBannerBlack from './components/reviewBannerBlack.vue';
 import ReviewBannerWhite from './components/reviewBannerWhite.vue';
 import AboutUsInfo from './components/aboutUs.vue';
 import ContactFormular from './components/contactFormular.vue'
+import CarouselPrim1 from './components/carouselPrimary.vue';
 
 
 export default {
@@ -62,6 +64,7 @@ export default {
     ProductSec4,
     MenuFooter // Füge die MenuFooter-Komponente zur Liste der Komponenten hinzu
     ,
+    CarouselPrim1,
     ReviewBannerBlack,
     ReviewBannerWhite,
     AboutUsInfo,
