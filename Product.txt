@@ -1,0 +1,60 @@
+<template>
+  <div id="app">
+    <MenuHeader />
+    
+    <ProductSec1
+      :productImage="'../images/Y-Phone_Green_buttons-removebg-preview.webp'"
+      :logoImage="'../images/why-logo-long-black.webp'"
+      title="Die Zukunft in deiner Hand"
+      price="Nur $4525"
+    />
+    <ProductSec2
+      :productImage="'../images/3_phones.webp'"
+      :logoImage="'../images/whY.webp'"
+      title="Viele Funktionen. Leicht im Preis."
+      price="From $4525"
+    />
+    <ProductSec3
+      :productImage="'../images/zube.webp'"
+      title="Unsere Accessories"
+      description="Mehr als nur eine Innovation"
+    />
+    <ProductSec4
+      :productImage="'../images/vergleich.webp'"
+      title="Der Unterschied ist wie Tag und Nacht."
+    />
+
+    <ProductSec3
+      :productImage="'../images/zube.webp'"
+      title="Unsere Accessories"
+      description="Mehr als nur eine Innovation"
+    />
+
+    <MenuFooter /> <!-- Füge hier die MenuFooter-Komponente hinzu -->
+  </div>
+</template>
+
+<script>
+import MenuHeader from './components/MenuHeader.vue'
+import MenuFooter from './components/MenuFooter.vue' // Importiere die MenuFooter-Komponente
+import ProductSec1 from './components/whiteProduct.vue';
+import ProductSec2 from './components/blackProduct.vue';
+import ProductSec3 from './components/whitePictureComponent.vue';
+import ProductSec4 from './components/blackPictureComponent.vue';
+
+export default {
+  name: 'App',
+  components: {
+    MenuHeader,
+    ProductSec1,
+    ProductSec2,
+    ProductSec3,
+    ProductSec4,
+    MenuFooter // Füge die MenuFooter-Komponente zur Liste der Komponenten hinzu
+}
+}
+</script>
+
+<style>
+
+</style>
