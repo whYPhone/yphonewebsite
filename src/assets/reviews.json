@@ -1,0 +1,22 @@
+[
+    {
+      "link": "https://linustechtips.com/",
+      "imageSrc": "images/ltt.svg",
+      "imageAlt": "Linus Tech Tips Logo",
+      "text": "Es ist bezahlbar, sieht aus wie ein Top-Smartphone, Display und Kamera überzeugen."
+    },
+    {
+      "link": "https://www.nytimes.com/",
+      "imageSrc": "images/nyt.svg",
+      "imageAlt": "NewYork Times Logo",
+      "text": "Outstanding innovation and leading technology, that covers all needs."
+    },
+    {
+      "link": "https://t3n.de/",
+      "imageSrc": "images/t3n.webp",
+      "imageAlt": "t3n Logo",
+      "text": "Ein bezahlbares Produkt mit unschlagbaren Bildern."
+    }
+    
+  ]
+  
