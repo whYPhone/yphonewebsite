@@ -11,7 +11,7 @@
         <h2 class="title">{{ title }}</h2>
         <span class="text">{{ price }}</span>
         <div class="btns-group">
-          <a href="../pages/order.html" class="btn-solid">Kaufen</a>
+          <router-link to="/Order" class="btn-solid">Kaufen</router-link>
         </div>
       </div>
     </div>

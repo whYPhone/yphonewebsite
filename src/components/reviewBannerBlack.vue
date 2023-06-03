@@ -1,18 +1,18 @@
 <template>
-    <div class="fakerezension">
-      <div class="title text-center">Kundenrezensionen ihres Vertrauens</div>
-      <ul class="review-container">
-        <li class="reviews" v-for="(review, index) in reviews" :key="index">
-          <div class="review-icon">
-            <a :href="review.link">
-              <img :width="review.width" :height="review.height" :src="review.imageSrc" :alt="review.imageAlt" />
-            </a>
-          </div>
-          <div class="review-text">{{ review.text }}</div>
-        </li>
-      </ul>
-    </div>
-  </template>
+  <div class="fakerezension">
+    <div class="title text-center">Kundenrezensionen ihres Vertrauens</div>
+    <ul class="review-container">
+      <li class="reviews" v-for="(review, index) in reviews" :key="index">
+        <div class="review-icon">
+          <a :href="review.link">
+            <img :width="review.width" :height="review.height" :src="review.imageSrc" :alt="review.imageAlt" class="review-image" />
+          </a>
+        </div>
+        <div class="review-text">{{ review.text }}</div>
+      </li>
+    </ul>
+  </div>
+</template>
   
   <script>
   export default {
@@ -58,6 +58,13 @@
     margin-top: 2rem;
   }
   
+.review-image {
+  width: 15%;
+  height: 30%;
+  object-fit: cover;
+  object-position: center;
+}
+
   .reviews {
     width: 33.33%;
     text-align: center;

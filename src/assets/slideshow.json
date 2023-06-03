@@ -1,0 +1,9 @@
+{
+    "slideshowItems": [
+      { "type": "video", "url": "../assets/images/Slideshow/whY_Phone1_Trailer_(1).mp4" },
+      { "type": "image", "url": "../assets/images/Product/Y-Phone_White_2-removebg.webp" },
+      { "type": "image", "url": "../assets/images/Product/Y-Phone_Green_2-removebg.webp" },
+      { "type": "image", "url": "../assets/images/Product/Y-Phone_Black_2-removebg.webp" }
+    ]
+  }
+  

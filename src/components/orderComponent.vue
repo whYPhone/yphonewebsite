@@ -107,7 +107,7 @@
             <!-- Product Pricing -->
             <div class="product-price">
               <span>Preis: {{ selectedPrice }}</span>
-              <button type="submit" class="cart-btn">Jetzt bestellen</button>
+              <router-link to="/Confirmation" class="cart-btn">Jetzt bestellen</router-link>
             </div>
           </div>
         </div>
@@ -127,7 +127,12 @@
         sizes: ["1 TB", "5 TB", "10 TB"],
         selectedColor: "cyan",
         selectedSize: "1 TB",
-        selectedImage: "../images/Y-Phone_Green_2-removebg.webp",
+        selectedImage: "../assets/images/Product/3_phones.webp",
+        images: {
+        cyan: "../assets/images/Product/Y-Phone_Green_2-removebg.webp",
+        white: "../assets/images/Product/Y-Phone_White_2-removebg.webp",
+        black: "../assets/images/Product/Y-Phone_Black_2-removebg.webp"
+        },
         prices: {
           "1 TB": "$4525",
           "5 TB": "$5999",
@@ -138,7 +143,7 @@
     methods: {
       updateSelectedImage() {
         // Ändert das Bild basierend auf der ausgewählten Farbe
-        this.selectedImage = `../images/Y-Phone_${this.selectedColor}_2-removebg.webp`;
+        this.selectedImage = this.images[this.selectedColor];
       },
       updateSelectedSize(size) {
         // Ändert die ausgewählte Speicherplatzgröße und den Preis
@@ -396,7 +401,7 @@
   }
   
   .cart-btn:hover {
-    background-color: #7dc855;
+    background-color: #1171c0;
   }
   
   /* Responsive */

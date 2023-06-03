@@ -1,29 +1,51 @@
 <template>
   <div class="menu-header">
-    <a href="index.html"><img class="logo" alt="whYPhone-logo" src="/assets/bilder/whY-long.webp"></a>
-    <input type="checkbox" id="active">
+    <router-link to="/" class="logo-link">
+      <img class="logo" alt="whYPhone-logo" src="/assets/images/Logo/whY-long.webp">
+    </router-link>
+    <input type="checkbox" id="active" v-model="isExpanded">
     <label for="active" class="menu-btn">
       <i v-if="!isExpanded" class="fas fa-bars"></i>
       <i v-else class="fas fa-times"></i>
     </label>
-    <div class="wrapper">
+    <div class="wrapper" :class="{ expanded: isExpanded }">
       <ul>
-        <!-- Hauptseite -->
-        <li><a href="index.html">Home</a></li>
-        <!-- Produktseite -->
-        <li><a href="pages/products.html">Produkte</a></li>
-        <!-- Anfrageformular -->
-        <li><a href="pages/order.html">Bestellen</a></li>
-        <!-- Anchorpoint zu Unser Team -->
-        <li><a class="anchorpoint" href="index.html#about" onclick="active.click()">Unser Team</a></li>
-        <!-- FaQ-->
-        <li><a class="anchorpoint" href="pages/faq.html" onclick="active.click()">FAQ</a></li>
-        <!-- Anchorpoint Kontaktformulat -->
-        <li><a class="anchorpoint" href="index.html#contact" onclick="active.click()">Kontakt</a></li>
+        <li>
+          <router-link to="/" class="nav-link" @click="isExpanded = false">
+            Hauptseite
+          </router-link>
+        </li>
+        <li>
+          <router-link to="/Product" class="nav-link" @click="isExpanded = false">
+            Produktseite
+          </router-link>
+        </li>
+        <li>
+          <router-link to="/Order" class="nav-link" @click="isExpanded = false">
+            Anfrageformular
+          </router-link>
+        </li>
+        <li>
+        <a class="anchorpoint" href="/#about" @click="isExpanded = false">
+          Über uns
+        </a>
+        </li>
+
+        <li>
+          <router-link to="/FAQ" class="nav-link" @click="isExpanded = false">
+            FaQ
+          </router-link>
+        </li>
+        <li>
+        <a class="anchorpoint" href="/#contact" @click="isExpanded = false" style="scroll-margin-top: 20%;">
+          Kontakt
+        </a>
+        </li>
       </ul>
     </div>
   </div>
 </template>
+
 
 <script>
 export default {
@@ -31,6 +53,17 @@ export default {
     return {
       isExpanded: false
     };
+  },
+  mounted() {
+    const hash = window.location.hash;
+    if (hash) {
+      const element = document.querySelector(hash);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    } else {
+      window.scrollTo(0, 0);
+    }
   }
   // Weitere Methoden und Lifecycle-Hooks
 };

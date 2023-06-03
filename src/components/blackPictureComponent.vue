@@ -7,8 +7,8 @@
           </div>
           <h2 class="title">{{ title }}</h2>
           <div class="btns-group">
-            <a href="../pages/order.html" class="btn-solid">Kaufen</a>
-          </div>
+          <router-link to="/Order" class="btn-solid">Kaufen</router-link>
+        </div>
         </div>
       </div>
     </section>

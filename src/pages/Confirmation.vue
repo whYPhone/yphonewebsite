@@ -1,32 +1,31 @@
 <template>
     <div id="app">
+      <vue-router/>
       
-      <FaqComponent/>
-      
+      <ConfirmationComponent/>
+  
     </div>
   </template>
   
   <script>
-  
-  
+ 
+  import ConfirmationComponent from '../components/confirmationComponent.vue';
 
-  import FaqComponent from '../components/faqComponent.vue';
   
-
   
   
   
   export default {
     name: 'App',
     components: {
-    
-    FaqComponent
-    
-},
+      
+      ConfirmationComponent
+  },
   mounted() {
     window.scrollTo(0, 0);
   }
   }
+  
   </script>
   
   <style>

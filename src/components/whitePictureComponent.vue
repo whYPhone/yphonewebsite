@@ -95,8 +95,8 @@ html {
 }
 
 .product-img {
-    width: 100%;
-    max-width: 500px;
+    width: auto;
+    max-width: auto;
 }
 
 

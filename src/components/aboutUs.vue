@@ -8,7 +8,7 @@
             <h5 class="about-align-text about-text-names">{{ member.name }}</h5>
             <p class="about-align-text">{{ member.role }}</p>
             <a :href="member.instagramLink">
-              <img class="instagram" src="images/instagram.svg" alt="instagram">
+              <img class="instagram" src="/assets/images/Review/instagram.svg" alt="instagram">
             </a>
           </div>
         </div>
@@ -53,7 +53,7 @@
             instagramLink: 'https://instagram.com/vl4d1_1502/'
           },
           {
-            name: 'Heiko',
+            name: 'Heiko Schramek',
             role: 'stellv. Entwicklungsabteilung',
             imageClass: 'heiko',
             instagramLink: 'https://instagram.com/vl4d1_1502/'
@@ -116,23 +116,23 @@
   }
   
   .thomas {
-    background-image: url(/public/assets/bilder/Y-Phone_Black_1.png);
+    background-image: url(/public/assets/images/AboutUs/thomas.webp);
   }
   
   .paul {
-    background-image: url();
+    background-image: url(/public/assets/images/AboutUs/paul.webp);
   }
   
   .raphael {
-    background-image: url();
+    background-image: url(/public/assets/images/AboutUs/raphael.webp);
   }
   
-  .rene {
-    background-image: url();
+  .heiko {
+    background-image: url(/public/assets/bilder/Y-Phone_Black_1.png);
   }
   
   .vladimir {
-    background-image: url();
+    background-image: url(/public/assets/images/AboutUs/vladimir.webp);
   }
   
   .samuel {

@@ -1,7 +1,9 @@
 <template>
     <div id="app">
+      <vue-router/>
       
-      <FaqComponent/>
+      <ImpressumComponent/>
+  
       
     </div>
   </template>
@@ -9,10 +11,9 @@
   <script>
   
   
-
-  import FaqComponent from '../components/faqComponent.vue';
+  import ImpressumComponent from '../components/impressumComponent.vue';
   
-
+  
   
   
   
@@ -20,8 +21,8 @@
     name: 'App',
     components: {
     
-    FaqComponent
     
+    ImpressumComponent
 },
   mounted() {
     window.scrollTo(0, 0);

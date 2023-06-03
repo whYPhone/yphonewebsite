@@ -1,20 +1,20 @@
 <template>
-    <div class="fakerezension-product">
-      <div class="title">Kundenrezensionen eures Vertrauens</div>
-      <ul class="review-container">
-        <li v-for="review in reviews" :key="review.id" class="reviews">
-          <div class="review-icon">
-            <a :href="review.link">
-              <img :src="review.image" :alt="review.alt" />
-            </a>
-          </div>
-          <div class="review-text">
-            {{ review.text }}
-          </div>
-        </li>
-      </ul>
-    </div>
-  </template>
+  <div class="fakerezension-product">
+    <div class="title">Kundenrezensionen eures Vertrauens</div>
+    <ul class="review-container">
+      <li v-for="review in reviews" :key="review.id" class="reviews">
+        <div class="review-icon">
+          <a :href="review.link">
+            <img :src="review.image" :alt="review.alt" class="review-image" />
+          </a>
+        </div>
+        <div class="review-text">
+          {{ review.text }}
+        </div>
+      </li>
+    </ul>
+  </div>
+</template>
   
   <script>
   import reviewsData from '/src/assets/reviewsProduct.json';
@@ -48,6 +48,13 @@
     background-color: #fff;
   }
   
+  .review-image {
+  width: 40%;
+  height: 40%;
+  object-fit: cover;
+  object-position: center;
+}
+
   .title {
     color: #1d1d1f;
     text-align: center;

@@ -4,17 +4,17 @@
       <div class="contentsfooter">
         <div class="footerCollums">
           <h4>whY</h4>
-          <a href="index.html">Home</a>
-          <a href="./pages/products.html">Produkt</a>
-          <a href="./pages/order.html">Bestellen</a>
-          <a href="index.html#about">Unser Team</a>
-          <a href="./pages/faq.html">FAQ</a>
-          <a href="index.html#contact">Kontakt</a>
+          <router-link to="/">Home</router-link>
+          <router-link to="/Product">Produkt</router-link>
+          <router-link to="/Order">Bestellen</router-link>
+          <router-link to="/">Unser Team</router-link>
+          <router-link to="/FAQ">FAQ</router-link>
+          <router-link to="/">Kontakt</router-link>
         </div>
         <div class="footerCollums">
           <h4>Impressum</h4>
-          <a href="./pages/impressum.html">Impressum</a>
-          <a href="./pages/impressum.html#datenschutz">Datenschutz</a>
+          <router-link to="/Impressum">Impressum</router-link>
+          <router-link to="/Impressum#datenschutz">Datenschutz</router-link>
         </div>
         <div class="footerCollums">
           <h4>Social images</h4>

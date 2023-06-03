@@ -2,28 +2,28 @@
     {
       "id": 1,
       "link": "https://www.google.com",
-      "image": "../images/google.svg",
+      "image": "/assets/images/Review/google.svg",
       "alt": "Google Logo",
       "text": "Like magic."
     },
     {
       "id": 2,
       "link": "https://www.why.projekt.dhbw-heidenheim.de",
-      "image": "../images/logo_black.webp",
+      "image": "/assets/images/Logo/logo_black.webp",
       "alt": "Why Phone Logo",
-      "text": "Um es einfach zu halten:\nDas Beste für dich."
+      "text": "Um es einfach zu halten: Das Beste für dich."
     },
     {
       "id": 3,
       "link": "https://www.shopmrbeast.com",
-      "image": "../images/mrbeast.svg",
+      "image": "/assets/images/Review/mrbeast.svg",
       "alt": "MrBeast Logo",
       "text": "The best thing I ever spend money on."
     },
     {
       "id": 4,
       "link": "https://www.youtube.com/@unboxtherapy",
-      "image": "../images/unbox-therapy-black.webp",
+      "image": "/assets/images/Review/unbox-therapy-black.webp",
       "alt": "Unbox Therapy Logo",
       "text": "like using the future of smartphones today."
     }

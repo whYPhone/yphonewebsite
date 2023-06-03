@@ -1,67 +1,64 @@
 <template>
-  <div class="carousel" v-if="currentImage">
-    <img :src="currentImage.src" :alt="currentImage.description" />
-    <p>{{ currentImage.description }}</p>
+  <div class="carousel">
+    <carousel :autoplay="true" :loop="true" :perPageCustom="1">
+      <slide v-for="(item, index) in carouselItems" :key="index">
+        <!-- Replace the content below with your own carousel item -->
+        <div class="carousel-item">
+          <img :src="item.image" :alt="item.caption" />
+          <div class="caption">{{ item.caption }}</div>
+        </div>
+      </slide>
+    </carousel>
   </div>
 </template>
 
 <script>
+import Carousel from 'vue-carousel/src/Carousel.vue';
+import Slide from 'vue-carousel/src/Slide.vue';
+
 export default {
+  components: {
+    Carousel,
+    Slide,
+  },
   data() {
     return {
-      images: [],
-      currentImageIndex: 0,
-      timer: null
+      carouselItems: [
+        {
+          image: '/assets/images/testimages/testimage1.jpg',
+          caption: 'Carousel Item 1',
+        },
+        {
+          image: '/assets/images/testimages/testimage2.jpg',
+          caption: 'Carousel Item 2',
+        },
+        {
+          image: '/assets/images/testimages/testimage3.jpg',
+          caption: 'Carousel Item 3',
+        },
+      ],
     };
   },
-  mounted() {
-    this.fetchImages();
-    this.timer = setInterval(this.changeImage, 15000);
-  },
-  beforeUnmount() {
-    clearInterval(this.timer);
-  },
-  methods: {
-    fetchImages() {
-      fetch('carousel.json')
-        .then(response => response.json())
-        .then(data => {
-          this.images = data.images;
-        })
-        .catch(error => {
-          console.error('Error fetching carousel images:', error);
-        });
-    },
-    changeImage() {
-      this.currentImageIndex = (this.currentImageIndex + 1) % this.images.length;
-    }
-  },
-  computed: {
-    currentImage() {
-      return this.images[this.currentImageIndex] || null;
-    }
-  }
 };
 </script>
 
-<style scoped>
+<style>
 .carousel {
   width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
-.carousel img {
+.carousel-item {
+  text-align: center;
+}
+
+.carousel-item img {
   max-width: 100%;
-  max-height: 100%;
+  height: auto;
 }
 
-.carousel p {
-  margin-top: 10px;
+.caption {
   font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
 }
 </style>
-

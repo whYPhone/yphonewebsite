@@ -11,7 +11,7 @@
         <h2>{{ title }}</h2>
         <span class="text">{{ price }}</span>
         <div class="btns-group">
-          <a href="../pages/order.html" class="btn-solid">Kaufen</a>
+          <router-link to="/Order" class="btn-solid">Kaufen</router-link>
         </div>
       </div>
     </div>
@@ -134,19 +134,19 @@ html {
 }
 
 .product-img {
-    width: 100%;
-    max-width: 500px;
+    width: 10%;
+    max-width: 10%;
 }
 
 .logo-img-long img {
     max-height: auto;
-    width: 100%;
+    width: 50%;
 }
 
 .logo-img img {
-    height: 100%;
-    width: 100%;
-    max-width: 100vh;
-    max-height: 100vw;
+    height: 10%;
+    width: 10%;
+    max-width: 10vh;
+    max-height: 10vw;
 }
 </style>
