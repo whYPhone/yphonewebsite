@@ -1,6 +1,6 @@
 <template>
     <div class="block" id="contact">
-      <p class="contact-title">Nehmen Sie gerne Kontakt mit uns auf.</p>
+      <p class="contact-title">Nehmen Sie gerne Kontakt mit uns auf</p>
       <p class="contact-text">Wir sind für dich da! Unsere Support-Spezialisten sind Montag bis Freitag verfügbar</p>
       <p class="contact-text">Unsere Support-Email: <b>support@whY.de</b></p>
       <p class="contact-text">Servicezeit: 10:00 bis 19:00 Uhr, Montag bis Samstag</p>
@@ -60,7 +60,7 @@
           </div>
           <div class="contact-row">
             <div class="contact-col-message">
-              <button type="submit" class="contact-row-rounded contact-thing">(Einreichen)</button>
+              <button type="submit" class="contact-row-rounded contact-thing">EINREICHEN</button>
             </div>
           </div>
         </div>
@@ -95,7 +95,15 @@
   </script>
   
   <style scoped>
+
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
   #contact {
+
     padding: 0 0.625rem !important;
     flex: 0 0 auto;
     width: 60%;
@@ -112,6 +120,7 @@
   }
   
   .contact-title {
+    font-family: 'Righteous', sans-serif !important;
     font-size: 2rem !important;
     margin-bottom: 3%;
     display: flex;
@@ -120,13 +129,17 @@
   }
   
   .contact-text {
+    text-align: center !important;
+    font-family: 'Open Sans', sans-serif !important;
     margin-bottom: 0;
     margin-top: 0;
-    font-size: 0.9375rem !important;
-    text-align: left;
+    font-size: 1rem !important;
   }
   
   .contact-text2 {
+    font-size: larger !important;
+    font-family: 'Roboto', sans-serif !important;
+    font-weight: 400;
     margin-bottom: 0.25rem;
     margin-top: 2.5rem;
   }
@@ -155,19 +168,21 @@
   }
   
   .contact-thing {
-    color: #000000;
+    font-family: 'Open Sans', sans-serif !important;
+    color: #242424;
     padding: 0.5rem 1rem;
     border-color:#000;
-    border-width: 1px;
+    border-width: 1.5px;
+    
   }
   
   .contact-thing:focus {
     outline: none !important;
-    border-color: #000000;
+    border-color: #a0a0a0;
   }
   
   .contact-thing::placeholder {
-    color: #ebebeb
+    color: #000000;
   }
   
   .contact-col-message {
@@ -185,12 +200,16 @@
     border-bottom-right-radius: 2em;
     border-top-left-radius: 2em;
     border-top-right-radius: 2em;
+    font-family: 'Open Sans', sans-serif !important;
   }
   
   .contact-col-message button {
-    background-color: #1d1d1f;
-    color: #ebebeb;
+    background-color: #222222;
+    color: #e2e2e2;
     width: 95%;
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 1rem !important;
+    font-weight: 600;
   }
   
   .contact-number input::-webkit-outer-spin-button,

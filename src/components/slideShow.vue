@@ -63,7 +63,8 @@
   
   <style>
   .slideshow-container {
-    width: 800px;
+    font-family: 'Righteous', sans-serif !important;
+    width: 40%;
     height: 900px;
     display: flex;
     justify-content: center;

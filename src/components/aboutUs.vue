@@ -1,6 +1,7 @@
 <template>
     <div id="about">
-      <div style="color: #FFFFFF; text-align: center; font-size: 2rem;" class="title">Unser Team</div>
+
+      <div class="title">Unser Team</div>
       <div class="about-layout-row">
         <div v-for="member in teamMembers" :key="member.name" class="about-align about-layout-cell">
           <div class="about-container-layout">
@@ -65,6 +66,20 @@
   </script>
   
   <style scoped>
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+  .title {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 3rem;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+  }
   .about-layout-row {
     flex: 1 1 auto;
     flex-direction: row;
@@ -97,6 +112,8 @@
   }
   
   .about-container-layout {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
     padding: 30px 0;
     position: relative;
     flex: 1;
@@ -140,6 +157,7 @@
   }
   
   .about-align-text {
+    font-family: 'Open Sans', sans-serif;
     text-align: center;
     word-wrap: break-word;
     position: relative;

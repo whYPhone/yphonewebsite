@@ -40,15 +40,24 @@
   </script>
   
   <style scoped>
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
   .fakerezension {
+    font-family: 'Open Sans', sans-serif;
     padding: 1px 2.25rem 5.8125rem!important;
     background-color: #1d1d1f;
     font-family: Arial, sans-serif; /* Verwende hier die gewünschte Schriftart */
   }
   
   .title {
+    font-family: 'Raleway', sans-serif;
     color: #ffffff;
-    font-size: 24px;
+    font-size: 2rem;
     text-align: center;
   }
   
@@ -68,6 +77,7 @@
   .reviews {
     width: 33.33%;
     text-align: center;
+    font-size: 1rem;
     list-style-type: none;
     padding: 0 3%;
   }
@@ -78,7 +88,7 @@
   
   .review-text {
     letter-spacing: 0.26px;
-    font-size: 1.5625rem;
+    font-size: 1.25rem;
     line-height: 1.15;
     margin: 0.5rem auto 0;
     color: #e4e4e4;
