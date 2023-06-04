@@ -92,7 +92,7 @@ bottom: -9px;
 background-color: #168ae9;
 height: 2px;
 box-sizing: border-box;
-width: 24rem;
+width: 15rem;
 }
 
 .footerCollums a {

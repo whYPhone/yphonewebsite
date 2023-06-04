@@ -36,6 +36,13 @@
     margin: 0;
     box-sizing: border-box;
 }
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 
 html {
     scroll-behavior: smooth;
@@ -68,20 +75,24 @@ html {
 }
 
 .title {
-    font-weight: 500;
-    font-size: 2.8rem;
+    font-family: 'Open Sans', sans-serif !important;
+    font-weight: 400;
+    font-size: 2.5rem !important;
     line-height: 1.2;
     max-width: 500px;
     margin: 2rem auto 1rem auto;
 }
 
 .text {
+    font-family: 'Open Sans', sans-serif !important;
     font-weight: 500;
     font-size: 1.2rem;
     display: block;
 }
 
 .btns-group {
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 1rem;
     margin-top: 3rem;
 }
 

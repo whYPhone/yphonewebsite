@@ -74,11 +74,11 @@
 
   .title {
     font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
+    font-weight: 300;
     color: #ffffff;
     font-size: 3rem;
-    margin-top: 3rem;
-    margin-bottom: 1rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
   }
   .about-layout-row {
     flex: 1 1 auto;
@@ -181,6 +181,7 @@
   }
   
   #about {
+    padding-top: 0.5rem;
     background-color: #1d1d1f;
   }
   

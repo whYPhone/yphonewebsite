@@ -22,7 +22,7 @@
         </li>
         <li>
           <router-link to="/Order" class="nav-link" @click="isExpanded = false">
-            Anfrageformular
+            Kaufen
           </router-link>
         </li>
         <li>

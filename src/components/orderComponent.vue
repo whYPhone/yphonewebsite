@@ -1,5 +1,5 @@
   <template>
-    <div class="order-container block">
+    <div class="order-container block" id="orderID">
       <div class="order-row">
         <!-- Left Column / Product Image -->
         <div class="left-column order-column">
@@ -13,6 +13,7 @@
             <span>{{ productName }}</span>
             <h1>{{ productName }}</h1>
             <p>{{ productDescription }}</p>
+            <br>
           </div>
   
           <!-- Product Configuration -->
@@ -46,10 +47,9 @@
           </div>
   
           <div class="block" id="contact">
-            <p class="contact-text">Ihre Kontaktdaten</p>
-            <!-- Kontaktformular hier einfügen -->
             <div class="order-container">
-    <p class="contact-text contact-text2">Ihre Anschrift</p>
+    <h3 class="contact-text contact-text2">Ihre Daten</h3>
+    <br>
     <form class="contact-form" action="../pages/confirmation.html" autocomplete="on">
       <div>
         <div>
@@ -91,7 +91,8 @@
             </select>
         </div>
     </div>
-    <p class="contact-text contact-text2">Wie können wir sie erreichen?</p>
+    <h3 class="contact-text contact-text2">Wie können wir sie erreichen?</h3>
+    <br>
                 <div class="contact-row">
                   <div class="contact-col">
                     <input type="email" class="contact-row-rounded contact-thing" placeholder="Email" required />
@@ -99,6 +100,7 @@
                   <div class="contact-col">
                     <input type="text" class="contact-row-rounded contact-thing" placeholder="Telefonnummer" required />
                   </div>
+                  <br>
                 </div>
   </div>
       </div>
@@ -120,7 +122,7 @@
     name: "OrderComponent",
     data() {
       return {
-        productName: "whY-Phone(1)",
+        productName: "whY-Phone",
         productDescription:
           "Innovatives Design trifft neueste technische Errungenschaften. Die 20-fache Kamera und whY-OS wurden so entwickelt, dass jede Spiegelreflexkamera überflüssig ist.",
         colors: ["cyan", "white", "black"],
@@ -160,11 +162,32 @@
   </script>
   
   <style scoped>
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+  
   .order-container {
+    font-family: 'Open Sans', sans-serif;
     margin: 3rem auto 0;
     padding: 0 1rem;
     justify-content: space-between;
     align-items: center;
+  }
+  h1{
+    font-family: 'Raleway', sans-serif;
+    font-size: 4.5rem !important;
+    margin-bottom: 1rem;
+    margin-top: 0.5rem;
+  }
+  h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
   }
   
   /* Row */

@@ -54,6 +54,7 @@ html {
 }
 
 .container {
+    font-family: 'Open Sans', sans-serif !important;
     max-width: 1170px;
     margin: 0 auto;
     padding: 0 1rem;
@@ -79,16 +80,16 @@ html {
     text-align: center;
 }
 
-.title {
-    font-weight: 500;
-    font-size: 2.8rem;
+h2 {
+    font-weight: 600;
+    font-size: 2.5rem !important;
     line-height: 1.2;
     max-width: 500px;
-    margin: 2rem auto 1rem auto;
+    margin: 1rem auto 1rem auto;
 }
 
 .text {
-    font-weight: 500;
+    font-weight: 300;
     font-size: 1.2rem;
     display: block;
 }

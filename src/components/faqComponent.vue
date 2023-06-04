@@ -26,13 +26,21 @@
   </script>
 
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 .faq {
   margin: 5% 5%;
 }
 
 .title {
-  font-size: 2.5rem;
-  font-weight: 700;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 3rem;
+  font-weight: 500;
   text-align: center;
   margin-top: 5%;
 }
@@ -42,12 +50,13 @@
 }
 
 .faq-question {
+  font-family: 'Open Sans', sans-serif;
   padding: 20px 0;
   border-bottom: 1px dotted #ccc;
 }
 
 .panel-title {
-  font-size: 24px;
+  font-size: 20px;
   width: 100%;
   position: relative;
   margin: 0;
@@ -57,7 +66,7 @@
 }
 
 .panel-content {
-  font-size: 20px;
+  font-size: 1rem;
   padding: 0px 10%;
   margin: 0 40px;
   height: 0;

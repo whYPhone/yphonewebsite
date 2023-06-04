@@ -120,7 +120,8 @@
   }
   
   .contact-title {
-    font-family: 'Righteous', sans-serif !important;
+    font-family: 'Open Sans', sans-serif !important;
+    font-weight: 500;
     font-size: 2rem !important;
     margin-bottom: 3%;
     display: flex;
@@ -131,13 +132,14 @@
   .contact-text {
     text-align: center !important;
     font-family: 'Open Sans', sans-serif !important;
+    font-size: 1rem !important;
     margin-bottom: 0;
     margin-top: 0;
     font-size: 1rem !important;
   }
   
   .contact-text2 {
-    font-size: larger !important;
+    font-size: 1.5rem !important;
     font-family: 'Roboto', sans-serif !important;
     font-weight: 400;
     margin-bottom: 0.25rem;
@@ -169,7 +171,7 @@
   
   .contact-thing {
     font-family: 'Open Sans', sans-serif !important;
-    color: #242424;
+    color: #1d1d1d;
     padding: 0.5rem 1rem;
     border-color:#000;
     border-width: 1.5px;
@@ -205,11 +207,11 @@
   
   .contact-col-message button {
     background-color: #222222;
-    color: #e2e2e2;
+    color: #fffdfd;
     width: 95%;
     font-family: 'Open Sans', sans-serif !important;
-    font-size: 1rem !important;
-    font-weight: 600;
+    font-size: 1.2rem !important;
+    font-weight: 500;
   }
   
   .contact-number input::-webkit-outer-spin-button,

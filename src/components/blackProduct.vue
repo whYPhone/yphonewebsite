@@ -54,6 +54,9 @@ export default {
 
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+
 
 html {
   scroll-behavior: smooth;
@@ -98,6 +101,7 @@ html {
 }
 
 .title {
+  font-family: 'Open Sans', sans-serif !important;
   font-weight: 500;
   font-size: 2.8rem;
   line-height: 1.2;
@@ -106,6 +110,7 @@ html {
 }
 
 .text {
+  font-family: 'Open Sans', sans-serif !important;
   font-weight: 500;
   font-size: 1.2rem;
   display: block;

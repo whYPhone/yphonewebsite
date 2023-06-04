@@ -3,11 +3,14 @@
       <div class="impressum-align">
         <h1>{{ impressum.title }}</h1>
         <p v-html="impressum.content"></p>
+        <br>
+        <hr>
       </div>
   
       <div id="datenschutz" class="impressum-align">
         <h1>{{ datenschutz.title }}</h1>
         <p v-html="datenschutz.content"></p>
+        <br>
       </div>
     </div>
   </template>
@@ -40,10 +43,14 @@
   }
   .impressum-align p{
     font-family: 'Open Sans', sans-serif !important;
+    font-size: 1rem;
     text-align: center;
   }
   .impressum-align h1 {
     font-family: 'Open Sans', sans-serif !important;
+    font-size: 2rem;
     text-align: center;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
   }
   </style>

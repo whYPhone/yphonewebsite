@@ -48,7 +48,7 @@ html {
 }
 
 .container {
-    font-family: 'Roboto', sans-serif;
+    
     max-width: 1170px;
     margin: 0 auto;
     padding: 0 1rem;
@@ -61,6 +61,7 @@ html {
 
 .product-right,
 .product-left {
+    font-family: 'Open Sans', sans-serif;
     width: 50%;
     padding: 3rem 2rem;
 }
@@ -71,19 +72,21 @@ html {
 }
 
 .product-right {
+    font-family: 'Open Sans', sans-serif !important;
     text-align: center;
 }
 
 .title {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 500;
-    font-size: 3rem;
+    font-family: 'Open Sans', sans-serif!important;
+    font-weight: 600;
+    font-size: 2.5rem;
     line-height: 1.2;
     max-width: 500px;
     margin: 2rem auto 1rem auto;
 }
 
 .text {
+    font-family: 'Open Sans', sans-serif !important;
     font-weight: 300;
     margin-top: 2rem;
     font-size: 2rem;

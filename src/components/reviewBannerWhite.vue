@@ -8,7 +8,12 @@
             <img :src="review.image" :alt="review.alt" class="review-image" />
           </a>
         </div>
-        <div class="review-text">
+        
+      </li>
+    </ul>
+    <ul class="review-container">
+      <li v-for="review in reviews" :key="review.id" class="reviews">
+      <div class="review-text">
           {{ review.text }}
         </div>
       </li>
@@ -38,6 +43,14 @@
   </script>
   
   <style scoped>
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
   .fakerezension {
     padding: 1px 2.25rem 5.8125rem!important;
     background-color: #1d1d1f;
@@ -56,20 +69,26 @@
 }
 
   .title {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
     color: #1d1d1f;
     text-align: center;
     font-size: 2rem;
-    margin-top: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
   }
   
   .fakerezension-product .review-text {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    margin-top: 3rem;
     color: #000;
   }
   
   .review-container {
     display: flex;
     flex-direction: row;
-    margin-top: 2rem;
+    margin-top: auto;
   }
   
   .reviews {
