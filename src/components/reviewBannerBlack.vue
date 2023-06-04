@@ -8,7 +8,13 @@
             <img :width="review.width" :height="review.height" :src="review.imageSrc" :alt="review.imageAlt" class="review-image" />
           </a>
         </div>
-        <div class="review-text">{{ review.text }}</div>
+      </li>
+    </ul>
+    <ul class="review-container">
+      <li v-for="review in reviews" :key="review.id" class="reviews">
+      <div class="review-text">
+          {{ review.text }}
+        </div>
       </li>
     </ul>
   </div>
