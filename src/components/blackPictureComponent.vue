@@ -121,6 +121,8 @@ html {
 }
 
 #product-sec-4 {
+    margin-left: auto;
+    margin-right: auto;
     background-color: #1d1d1f;
 }
 

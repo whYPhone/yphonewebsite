@@ -40,6 +40,7 @@ export default {
 
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 
+@import url("https://use.typekit.net/wlm0cne.css");
 body {
 margin: 0;
 padding: 0;
@@ -49,7 +50,8 @@ overflow-x: hidden;
 }
 
 .footer {
-font-family: 'Open Sans', sans-serif;
+font-family: 'New Order', sans-serif;
+font-weight: 500;
 background-color: #1d1d1f;
 padding: 4% 0;
 
