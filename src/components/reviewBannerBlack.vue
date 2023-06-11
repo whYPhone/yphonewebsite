@@ -74,8 +74,8 @@
   }
   
 .review-image {
-  width: 15%;
-  height: 30%;
+  width: 40%;
+  height: 40%;
   object-fit: cover;
   object-position: center;
 }
@@ -120,6 +120,12 @@
     .review-text {
       font-size: 1.125rem;
       margin: 0 auto 0.5rem;
+    }
+    .review-image {
+      width: 50%;
+      height: 50%;
+      object-fit: cover;
+      object-position: center;
     }
   }
   </style>

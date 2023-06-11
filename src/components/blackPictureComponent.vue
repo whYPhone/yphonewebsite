@@ -137,7 +137,7 @@ html {
 
 .product-img {
     width: 100%;
-    max-width: 500px;
+    max-width: 35rem;
 }
 
 
@@ -159,6 +159,15 @@ html {
     max-width: 100vh;
     max-height: 100vw;
 }
+@media screen and (max-width: 900px) and (min-width: 500px){
+    .product-img {
+    max-width: 80vw;
+    max-height: 100%;
+}
+
+    
+} 
+    
   </style>
   
   

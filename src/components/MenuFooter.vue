@@ -50,13 +50,19 @@ overflow-x: hidden;
 }
 
 .footer {
-font-family: 'New Order', sans-serif;
+font-family: 'Open Sans', sans-serif;
 font-weight: 500;
 background-color: #1d1d1f;
 padding: 4% 0;
 
 }
 
+@media screen and (min-width: 800px) {
+  .contentsfooter {
+    margin-left: 20% !important;
+    width: 60%;
+  }
+}
 .containerfooter {
 max-width: 100vw;
 align-items: center;
@@ -73,9 +79,9 @@ box-sizing: border-box;
 .footerCollums {
 align-items: center;
 width: 33.3%;
-padding: 0 225px;
 box-sizing: border-box;
 }
+
 
 .footerCollums h4 {
 font-size: 1.5rem;
@@ -110,11 +116,14 @@ margin-top: 5%;
 color: #ffffff;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) and (min-width: 500px) {
 .footerCollums {
-  width: 100%;
+  width: 80%;
   padding: 0;
-  margin-left: 40%;
+  margin-left: 20%;
+}
+.footerCollums h4::before {
+  width: 80%;
 }
 
 .containerfooter {

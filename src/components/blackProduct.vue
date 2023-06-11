@@ -63,8 +63,6 @@ html {
 }
 
 .full-width-section {
-
-  width: 100vw;
   background-color: #1d1d1f;
 }
 
@@ -88,7 +86,7 @@ html {
 .product-right,
 .product-left {
   width: 50%;
-  padding: 3rem 2rem;
+  padding: 4rem 4rem;
 }
 
 .product-left img {
@@ -113,7 +111,7 @@ html {
   font-family: 'Open Sans', sans-serif !important;
   font-weight: 500;
   font-size: 1.2rem;
-  display: block;
+  display: left;
 }
 
 .btns-group {

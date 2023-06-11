@@ -228,11 +228,11 @@
   /* Columns */
   
   .order-column {
-    height: 80vh;
     position: relative !important;
   }
   
   .left-column {
+    height: auto;
     width: 40%;
   }
   
@@ -248,7 +248,7 @@
   /* Left Column */
   .left-column img {
     width: auto;
-    height: 600px;
+    height: auto;
     position: relative;
     left: 0;
     right: 0;
@@ -439,26 +439,18 @@
     }
   
     .left-column {
-      height: 70vh;
+      height: 60vh;
     }
   
     .left-column img {
       max-height: 70vh;
       max-width: 80vw;
-      right: 0;
-      left: 0;
-      top: -65px;
-      left: initial;
-      margin: 5% 10vw 5%;
-      padding: 0;
+      margin-left: 5%;
+      margin-right: -5%;
+      margin-bottom: 2%;
     }
   }
   
-  @media screen and (max-width: 535px) {
-    .left-column img {
-      top: -85px;
-    }
-  }
   </style>
   
   

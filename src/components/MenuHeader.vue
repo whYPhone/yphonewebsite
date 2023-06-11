@@ -214,10 +214,4 @@ input[type="checkbox"] {
   scroll-margin-top: 3em;
 }
 
-@media screen and (max-width: 800px) {
-  .menu-header {
-    font-family: 'Righteous', sans-serif !important;
-    width: 100%;
-  }
-}
 </style>
