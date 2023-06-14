@@ -123,7 +123,7 @@ html {
     max-width: 100vh;
     max-height: 100vw;
 }
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 800px) {
     .product-right,
     .product-left {
         width: 100%;
@@ -142,6 +142,33 @@ html {
     }
     .product-img {
         width: 100%;
+        size: 800px;
+    }
+    .logo-img img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .product-right,
+    .product-left {
+        width: 100%;
+    }
+    .product-left {
+        padding: 0;
+    }
+    .product-right {
+        padding: 2rem 1rem;
+    }
+    .title {
+        font-size: 2rem;
+    }
+    .text {
+        font-size: 1.5rem;
+    }
+    .product-img {
+        width: 90%;
         size: 800px;
     }
     .logo-img img {

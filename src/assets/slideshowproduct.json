@@ -1,0 +1,9 @@
+{
+    "slideshowItems": [
+      { "type": "image", "url": "../assets/images/Product/productbanner/camera.jpeg" },
+      { "type": "image", "url": "../assets/images/Product/productbanner/dpad.jpeg" },
+      { "type": "image", "url": "../assets/images/Product/productbanner/joystick.jpeg" },
+      { "type": "image", "url": "../assets/images/Product/productbanner/steeringwheel.jpeg" }
+    ]
+  }
+  

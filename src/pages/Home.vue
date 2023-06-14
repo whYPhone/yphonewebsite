@@ -3,11 +3,7 @@
     
     <SlideShow/>
     <ReviewBannerBlack/>
-    <ProductSec3
-        :productImage="'/assets/images/Product/acc-bg.webp'"
-        title="Unsere Accessories"
-        description="Mehr als nur eine Innovation"
-      />
+    <ProductSec3/>
     <AboutUs/>
     <ContactFormular/>
     
@@ -18,7 +14,7 @@
 import ContactFormular from '../components/contactFormular.vue';
 import AboutUs from '../components/aboutUs.vue';
 import ReviewBannerBlack from '../components/reviewBannerBlack.vue';
-import ProductSec3 from '../components/whitePictureComponent.vue';
+import ProductSec3 from '../components/slideShowproductbanner.vue';
 import SlideShow from '../components/slideShow.vue';
 
 
