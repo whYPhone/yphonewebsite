@@ -171,4 +171,38 @@ html {
   max-width: 100vh;
   max-height: 100vw;
 }
+@media screen and (max-width: 900px)
+{
+  .title {
+  font-family: 'Open Sans', sans-serif !important;
+  font-weight: 500;
+  font-size: calc(10px + 3vw);
+  line-height: 1.2;
+  max-width: 500px;
+  margin: 2rem auto 1rem auto;
+  text-align: left  !important;
+}
+
+.text {
+  font-family: 'Open Sans', sans-serif !important;
+  font-weight: 500;
+  font-size: 1.2rem;
+  display: left;
+}
+
+.btns-group {
+  margin-top: 3rem;
+}
+
+.btn-solid {
+  background-color: #168ae9;
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem 1.2rem;
+  border-radius: 1.4rem;
+  font-size: 1.1rem;
+}
+
+  
+}
 </style>
