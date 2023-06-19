@@ -221,7 +221,7 @@ input[type="checkbox"] {
  z-index: 2;
  right: 2vh;
  top: 0;
- width: 5vh;
+ width: 4vh;
  text-align: center;
  align-items: center;
  line-height: 5vh;
@@ -244,7 +244,7 @@ input[type="checkbox"] {
   top: 0px;
   background-color: #1d1d1f;
   width: 100%;
-  height: 8vh!important;
+  height: 7vh!important;
   max-height: 8vh !important;
   display: block;
   z-index: 2;
