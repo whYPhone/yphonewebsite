@@ -124,7 +124,7 @@ export default {
   z-index: 2;
   right: 2vh;
   top: 0;
-  width: 2.5vh;
+  width: 3vh;
   text-align: center;
   align-items: center;
   line-height: 5vh;

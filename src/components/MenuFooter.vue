@@ -132,62 +132,26 @@ color: #ffffff;
   align-content: center;
 }
 }
-/*CSS for Devices between 900px and 1300px*/
-/*
-@media screen and (max-width: 1400px) and (min-width: 900px){
+
+
+@media screen and (max-width: 900px) {
   .contentsfooter {
     margin-left: 10% !important;
-    width: 90%!important;
+    width: 80% !important;
   }
-.footerCollums {
-  justify-content: center;
-  width: 30%;
-  display: block;
-  flex-wrap: wrap;
-  margin: auto;
-  box-sizing: border-box;
-  align-items: top;
-}
 
-.footerCollums h4::before {
-  width: 10rem;
-}
+  .footerCollums {
+    width: 100%;
+    padding: 0;
+    margin: auto;
+  }
 
-.containerfooter {
-  align-content: center;
-}
-.footerCollums h4 {
-font-size: 1rem;
-color: #ffffff;
-margin-bottom: 5vh;
-font-weight: 500;
-}
+  .footerCollums h4::before {
+    width: 80%;
+  }
 
-.footerCollums h4::before {
-content: '';
-
-left: -1rem;
-bottom: -9px;
-background-color: #168ae9;
-height: 2px;
-box-sizing: border-box;
-width: 12rem;
-}
-}
-*/
-
-@media screen and (max-width: 1450px){
-.footerCollums {
-  width: 90%;
-  padding: 0;
-  margin-left: auto;
-}
-.footerCollums h4::before {
-  width: 80%;
-}
-
-.containerfooter {
-  align-content: center;
-}
+  .containerfooter {
+    align-content: center;
+  }
 }
 </style>

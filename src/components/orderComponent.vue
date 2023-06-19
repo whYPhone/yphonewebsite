@@ -451,6 +451,52 @@
     }
   }
   
+  @media (max-width: 768px) {
+  /* Produktbeschreibung */
+  .product-description {
+    text-align: center;
+  }
+  
+  /* Produktfarbe */
+  .product-color {
+    text-align: center;
+  }
+  
+  .color-choose {
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Speicherkonfiguration */
+  .size-config {
+    text-align: center;
+  }
+  
+  .size-choose {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .size-choose button {
+    margin-right: 10px;
+  }
+  
+  /* Kontaktformular */
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .contact-row {
+    flex-direction: column;
+  }
+  
+  .contact-col {
+    width: 100%;
+  }
+}
+
   </style>
   
   
