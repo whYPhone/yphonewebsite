@@ -104,7 +104,11 @@
 }
 
 @media screen and (max-width: 1000px) {
+  .title {
+    font-size: 2.5rem;
+  }
   .panel-title {
+    font-size: 1rem;
     padding: 8px 7% 1%;
   }
 }

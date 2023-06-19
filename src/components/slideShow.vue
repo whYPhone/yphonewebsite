@@ -132,7 +132,7 @@
   
   .image {
     max-width: 80%;
-    max-height: 100%;
+    max-height: 80vh !important;
     object-fit: contain;
     margin-left: 10%;
     margin-right: -10%;

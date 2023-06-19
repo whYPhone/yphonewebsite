@@ -1,6 +1,6 @@
 <template>
     <div class="block" id="contact">
-      <p class="contact-title">Nehmen Sie gerne Kontakt mit uns auf</p>
+      <p class="contact-title">Nehmen Sie mit uns Kontakt auf</p>
       <p class="contact-text">Wir sind für dich da! Unsere Support-Spezialisten sind Montag bis Freitag verfügbar</p>
       <p class="contact-text">Unsere Support-Email: <b>support@whY.de</b></p>
       <p class="contact-text">Servicezeit: 10:00 bis 19:00 Uhr, Montag bis Samstag</p>
@@ -121,12 +121,13 @@
   
   .contact-title {
     font-family: 'Open Sans', sans-serif !important;
-    font-weight: 500;
-    font-size: 2rem !important;
+    font-weight: 600;
+    font-size: 1.6rem !important;
     margin-bottom: 3%;
     display: flex;
-  justify-content: center;
-  align-items: center;
+    text-align: center !important;
+    justify-content: center;
+    align-items: center;
   }
   
   .contact-text {
@@ -222,6 +223,46 @@
   
   
   @media screen and (max-width: 800px) {
+    .contact-col-message button {
+    background-color: #222222;
+    color: #fffdfd;
+    width: 95%;
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: .9rem !important;
+    font-weight: 500;
+  }
+    #contact {
+
+  padding: 0 0.625rem !important;
+  flex: 0 0 auto;
+  width: 80%;
+  box-sizing: border-box;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 2%;
+  margin-bottom: 3%;
+  }
+    .contact-title {
+    font-family: 'Open Sans', sans-serif !important;
+    font-weight: 500;
+    font-size: 1.3rem !important;
+    margin-bottom: 3%;
+    text-align: left !important;
+    margin-right: auto;
+    margin-left: auto;
+   }
+  
+  .contact-text {
+    margin-right: auto;
+    margin-left: auto;
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 1rem !important;
+    margin-bottom: 0;
+    margin-top: 0;
+    text-align: left !important;
+    font-size: 0.8rem !important;
+  }
     .contact-col {
       width: 100%;
     }

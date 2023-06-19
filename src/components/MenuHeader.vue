@@ -214,4 +214,19 @@ input[type="checkbox"] {
   scroll-margin-top: 3em;
 }
 
+@media screen and (max-width: 800px) {
+  .menu-header {
+  font-family: 'Open Sans', sans-serif !important;
+  font-size: 2rem !important;
+  position: sticky;
+  top: 0px;
+  background-color: #1d1d1f;
+  width: 100%;
+  height: 5vh;
+  max-height: 5vh;
+  display: block;
+  z-index: 2;
+}
+  
+}
 </style>
